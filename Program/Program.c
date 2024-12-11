@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <Windows.h>
 
 #define SIZE 10
 
@@ -19,6 +20,23 @@ int main()
 
 	for (int i = 0; i < SIZE; i++)
 	{
+		// 0x0000 : 이전에 누른 적이 없고 호출 시점에도 눌려있지 않은 상태
+
+		// 0x0001 : 이전에 누른 적이 있고 호출 시점에는 눌려있지 않은 상태
+
+		// 0x0002 : 이전에 누른 적이 없고 호출 시점에는 눌려있는 상태
+
+		// 0x0003 : 이전에 누른 적이 있고 호출 시점에도 눌려있는 상태
+
+		if (GetAsyncKeyState(VK_SPACE) & 0x0001)
+		{
+			printf("탐정 : ");
+		}
+		else
+		{
+			printf("의뢰인 : ");
+		}
+
 		printf("%s\n", dialog[i]);
 	}
 
