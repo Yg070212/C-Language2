@@ -5,6 +5,9 @@
     {
       "AbsoluteMoniker": "D:0:0:{3424F397-5577-4D92-80FA-F806EDDB4C16}|Program.vcxproj|C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Program\\Program.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3424F397-5577-4D92-80FA-F806EDDB4C16}|Program.vcxproj|solutionrelative:Program.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB2339C7-0049-4884-BC1B-B55C15514639}|..\\Class1th (GetAsyncKeyState)\\Class1th (GetAsyncKeyState).vcxproj|C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Class1th (GetAsyncKeyState)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,9 +27,23 @@
               "RelativeDocumentMoniker": "Program.c",
               "ToolTip": "C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Program\\Program.c",
               "RelativeToolTip": "Program.c",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAB8AAAADAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAACoAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-12-10T09:12:01.252Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.c",
+              "DocumentMoniker": "C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Class1th (GetAsyncKeyState)\\Source.c",
+              "RelativeDocumentMoniker": "..\\Class1th (GetAsyncKeyState)\\Source.c",
+              "ToolTip": "C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Class1th (GetAsyncKeyState)\\Source.c",
+              "RelativeToolTip": "..\\Class1th (GetAsyncKeyState)\\Source.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-11T09:07:07.856Z",
               "EditorCaption": ""
             }
           ]

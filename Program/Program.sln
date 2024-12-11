@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program", "Program.vcxproj", "{3424F397-5577-4D92-80FA-F806EDDB4C16}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class1th (GetAsyncKeyState)", "..\Class1th (GetAsyncKeyState)\Class1th (GetAsyncKeyState).vcxproj", "{DB2339C7-0049-4884-BC1B-B55C15514639}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{3424F397-5577-4D92-80FA-F806EDDB4C16}.Release|x64.Build.0 = Release|x64
 		{3424F397-5577-4D92-80FA-F806EDDB4C16}.Release|x86.ActiveCfg = Release|Win32
 		{3424F397-5577-4D92-80FA-F806EDDB4C16}.Release|x86.Build.0 = Release|Win32
+		{DB2339C7-0049-4884-BC1B-B55C15514639}.Debug|x64.ActiveCfg = Debug|x64
+		{DB2339C7-0049-4884-BC1B-B55C15514639}.Debug|x64.Build.0 = Debug|x64
+		{DB2339C7-0049-4884-BC1B-B55C15514639}.Debug|x86.ActiveCfg = Debug|Win32
+		{DB2339C7-0049-4884-BC1B-B55C15514639}.Debug|x86.Build.0 = Debug|Win32
+		{DB2339C7-0049-4884-BC1B-B55C15514639}.Release|x64.ActiveCfg = Release|x64
+		{DB2339C7-0049-4884-BC1B-B55C15514639}.Release|x64.Build.0 = Release|x64
+		{DB2339C7-0049-4884-BC1B-B55C15514639}.Release|x86.ActiveCfg = Release|Win32
+		{DB2339C7-0049-4884-BC1B-B55C15514639}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
