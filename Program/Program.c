@@ -1,131 +1,75 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <conio.h>
+#include <Windows.h>
 
-#define SIZE 5
+#define UP 72
+#define LEFT 75
+#define RIGHT 77
+#define DOWN 80
 
-void Shuffle(int array [], int size)
+void Position(int x, int y)
 {
-	for (int i = 0; i < size; i++)
-	{
-		int range = rand() % size;
+	// x축과 y축을 설정
+	COORD position = { x, y };
 
-		int temporary = array[range];
-		array[range] = array[i];
-		array[i] = temporary;
-	}
-}
-
-void View(int size)
-{
-	for (int i = 0; i < size; i++)
-	{
-		printf("♥");
-	}
-	printf("\n");
+	// 커서 위치를 이동하는 함수
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), position);
 }
 
 int main()
 {
-#pragma region rand() 함수
+	char key = 0;
 
-	// seed 값에 따라서 rand의 값이 바뀌게 됩니다.
-	// srand(time(NULL));
-	// 
-	// int random = rand()% 10 + 1;
-	// 
-	// printf("random 변수의 값 : %d\n", random);
+	int x = 0;
+	int y = 0;
 
-#pragma endregion
-
-#pragma region 셔플 함수
-
-	// srand(time(NULL));
-	// 
-	// int list[SIZE] = { 1, 2, 3, 4, 5 };
-	// 
-	// Shuffle(list, SIZE);
-	// 
-	// for (int i = 0; i < SIZE; i++)
-	// {
-	// 	printf("%d", list[i]);
-	// }
-#pragma endregion
-
-#pragma region localtime() 함수
-	// time_t currentTime = 0;
-	// 
-	// time(&currentTime);
-	// 
-	// struct tm* timePointer = localtime(&currentTime);
-	// 
-	// printf("%d 년\n", timePointer->tm_year+1900);
-	// printf("%d 월\n", timePointer->tm_mon+1);
-	// printf("%d 일\n", timePointer->tm_mday);
-	// printf("%d 요일\n", timePointer->tm_wday);
-	// 
-	// switch (timePointer->tm_wday)
-	// {
-	// case 0: printf("일요일\n", timePointer->tm_wday);
-	// 	break;
-	// case 1: printf("월요일\n", timePointer->tm_wday);
-	// 	break;
-	// case 2: printf("화요일\n", timePointer->tm_wday);
-	// 	break;
-	// case 3: printf("수요일\n", timePointer->tm_wday);
-	// 	break;
-	// case 4: printf("목요일\n", timePointer->tm_wday);
-	// 	break;
-	// case 5: printf("금요일\n", timePointer->tm_wday);
-	// 	break;
-	// case 6: printf("토요일\n", timePointer->tm_wday);
-	// 	break;
-	// }
-	// 
-	// printf("%d 시\n", timePointer->tm_hour);
-	// printf("%d 분\n", timePointer->tm_min);
-	// printf("%d 초\n", timePointer->tm_sec);
-#pragma endregion
-
-#pragma region UP - DOWN Game
-	
-	srand(time(NULL));
-
-	int Health = 5;
-	int answer = 0;
-	int computer = rand() % 50 + 1;
-
-	printf(" > Game Start < \n\n");
-
-	while (Health > 0)
+	while (1)
 	{
-		printf("체력 : ");
-		View(Health);
+		Position(x, y);
+		printf("★");
 
-		printf("player : ");
-		scanf_s("%d", &answer);
+		key = _getch();
 
-		if (answer == computer)
+		if (key == -32)
 		{
-			printf("\nV I C T O R Y\n");
+			key = _getch();
+		}
+
+		switch (key)
+		{
+		case UP   : y--;
+			if (y < 0)
+			{
+				Position(5, 5);
+			}
+			break;
+		case LEFT : x -= 2;
+			if (x < 0)
+			{
+				Position(5, 5);
+			}
+			break;
+		case RIGHT: x += 2;;
+			if (x > 20)
+			{
+				Position(5, 5);
+			}
+			break;
+		case DOWN : y++;
+			if (y > 20)
+			{
+				Position(5, 5);
+			}
+			break;
+		default   : printf("Exception\n");
 			break;
 		}
-		else if (answer < computer)
-		{
-			printf("\ncomputer가 가지고 있는 값 보다 적습니다.\n");
-			Health --;
-		}
-		else if (answer > computer)
-		{
-			printf("\ncomputer가 가지고 있는 값 보다 큽니다.\n");
-			Health--;
-		}
+
+		system("cls");
+
 	}
-	if (Health <= 0)
-	{
-		printf("\nD E F E A T\n");
-	}
-#pragma endregion
+
+
 
 
 	return 0;
