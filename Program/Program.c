@@ -1,76 +1,44 @@
 #include <stdio.h>
-#include <conio.h>
-#include <Windows.h>
-
-#define UP 72
-#define LEFT 75
-#define RIGHT 77
-#define DOWN 80
-
-void Position(int x, int y)
+#include <windows.h>
+enum State
 {
-	// x축과 y축을 설정
-	COORD position = { x, y };
+	IDLE,
+	ATTACK,
+	DIE
 
-	// 커서 위치를 이동하는 함수
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), position);
-}
+	// 열거형에서 중간에 있는 상수의 값을 변경하게 되면
+	// 그 다음에 있는 상수의 값이 변경된 값에서 부터 1씩 증가합니다.
+};
+
+// 0 BLACK
+// 1 DARKBLUE
+// 2 DARKGREEN
 
 int main()
 {
-	char key = 0;
+#pragma region 열거형
+	// 고유한 상수 값에 연결된 기호 이름의
+	// 집합입니다.
 
-	int x = 0;
-	int y = 0;
+	// enum State state = ATTACK;
+	// 
+	// switch (state)
+	// {
+	// case IDLE   : printf("대기 상태\n");
+	// 	break;
+	// case ATTACK : printf("공격 상태\n");
+	// 	break;
+	// case DIE    : printf("죽음 상태\n");
+	// 	break;
+	// default     : 
+	// 	break;
+	// }
 
-	while (1)
-	{
-		Position(x, y);
-		printf("★");
+#pragma endregion
 
-		key = _getch();
+	SetConsoleTextASttribute(GetSTDHandle(STD_OUTPUT_HANDLE), 5);
 
-		if (key == -32)
-		{
-			key = _getch();
-		}
-
-		switch (key)
-		{
-		case UP   : y--;
-			if (y < 0)
-			{
-				Position(5, 5);
-			}
-			break;
-		case LEFT : x -= 2;
-			if (x < 0)
-			{
-				Position(5, 5);
-			}
-			break;
-		case RIGHT: x += 2;;
-			if (x > 20)
-			{
-				Position(5, 5);
-			}
-			break;
-		case DOWN : y++;
-			if (y > 20)
-			{
-				Position(5, 5);
-			}
-			break;
-		default   : printf("Exception\n");
-			break;
-		}
-
-		system("cls");
-
-	}
-
-
-
+	printf("GYM");
 
 	return 0;
 }

@@ -1,2 +1,2 @@
 ﻿  Program.c
-  Program.vcxproj -> C:\Users\양현규\Desktop\겜프\Github\C-Language2\Program\x64\Debug\Program.exe
+C:\Users\양현규\Desktop\겜프\Github\C-Language2\Program\Program.c(17,21): error C2065: 'attack': 선언되지 않은 식별자입니다.

@@ -7,6 +7,9 @@
       "RelativeMoniker": "D:0:0:{3424F397-5577-4D92-80FA-F806EDDB4C16}|Program.vcxproj|solutionrelative:Program.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2F4DC43D-D83E-4C89-A9F4-318F86B59864}|..\\Class3th (Double Buffer)\\Class3th (Double Buffer).vcxproj|C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Class3th (Double Buffer)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6078D74D-52D8-4D96-BEE0-C2FCDBCA132D}|..\\Class2th (Time)\\Class2th (Time).vcxproj|C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Class2th (Time)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
@@ -30,7 +33,7 @@
               "RelativeDocumentMoniker": "Program.c",
               "ToolTip": "C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Program\\Program.c",
               "RelativeToolTip": "Program.c",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAADQAAAAHAAAA",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-12-10T09:12:01.252Z",
               "IsPinned": true,
@@ -40,23 +43,36 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Class2th (Time)\\Source.c",
-              "RelativeDocumentMoniker": "..\\Class2th (Time)\\Source.c",
-              "ToolTip": "C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Class2th (Time)\\Source.c",
-              "RelativeToolTip": "..\\Class2th (Time)\\Source.c",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAgwIMAAAABAAAA",
+              "DocumentMoniker": "C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Class3th (Double Buffer)\\Source.c",
+              "RelativeDocumentMoniker": "..\\Class3th (Double Buffer)\\Source.c",
+              "ToolTip": "C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Class3th (Double Buffer)\\Source.c",
+              "RelativeToolTip": "..\\Class3th (Double Buffer)\\Source.c",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAIwHkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-12-13T09:06:19.023Z"
+              "WhenOpened": "2024-12-17T09:34:53.104Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Source.c",
+              "DocumentMoniker": "C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Class2th (Time)\\Source.c",
+              "RelativeDocumentMoniker": "..\\Class2th (Time)\\Source.c",
+              "ToolTip": "C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Class2th (Time)\\Source.c",
+              "RelativeToolTip": "..\\Class2th (Time)\\Source.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-13T09:06:19.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Source.c",
               "DocumentMoniker": "C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Class1th (GetAsyncKeyState)\\Source.c",
               "RelativeDocumentMoniker": "..\\Class1th (GetAsyncKeyState)\\Source.c",
               "ToolTip": "C:\\Users\\\uC591\uD604\uADDC\\Desktop\\\uAC9C\uD504\\Github\\C-Language2\\Class1th (GetAsyncKeyState)\\Source.c",
               "RelativeToolTip": "..\\Class1th (GetAsyncKeyState)\\Source.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-12-11T09:07:07.856Z"
             }
