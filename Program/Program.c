@@ -1,44 +1,77 @@
 #include <stdio.h>
-#include <windows.h>
-enum State
-{
-	IDLE,
-	ATTACK,
-	DIE
 
-	// 열거형에서 중간에 있는 상수의 값을 변경하게 되면
-	// 그 다음에 있는 상수의 값이 변경된 값에서 부터 1씩 증가합니다.
+#define WITDH 10
+#define HEIGHT 10
+
+char maze[WITDH][HEIGHT] =
+{
+	// 0 = 공백
+	// 1 = ■
+	// 2 = 도착 포인트
+
+	{'1', '1', '1', '1', '1', '1', '1', '1', '1', '1'},
+	{'1', '0', '1', '1', '1', '0', '1', '1', '1', '1'},
+	{'1', '0', '1', '1', '1', '0', '1', '1', '1', '1'},
+	{'1', '0', '1', '0', '0', '0', '0', '0', '1', '1'},
+	{'1', '0', '1', '0', '1', '1', '1', '0', '1', '1'},
+	{'1', '0', '1', '0', '1', '0', '1', '0', '0', '1'},
+	{'1', '0', '1', '0', '1', '0', '1', '1', '0', '1'},
+	{'1', '0', '1', '0', '1', '0', '1', '1', '0', '1'},
+	{'1', '0', '0', '0', '0', '0', '1', '1', '2', '1'},
+	{'1', '1', '1', '1', '1', '1', '1', '1', '1', '1'},
 };
 
-// 0 BLACK
-// 1 DARKBLUE
-// 2 DARKGREEN
+void Render()
+{
+	for (int i = 0; i < WITDH; i++)
+	{
+		for (int j = 0; j < HEIGHT; j++)
+		{
+			printf("%c", maze[i][j]);
+			if ('0')
+			{
+				printf("  ", maze[i][j]);
+			}
+			if ('1')
+			{
+				printf("■", maze[i][j]);
+			}
+			if ('2')
+			{
+				printf("★", maze[i][j]);
+			}
+		}
+		printf("\n");
+	}
+}
 
 int main()
 {
-#pragma region 열거형
-	// 고유한 상수 값에 연결된 기호 이름의
-	// 집합입니다.
+#pragma region (2)차원 배열
+	// 배열의 요소로 또 다른 배열을 가리는 배열입니다.
 
-	// enum State state = ATTACK;
-	// 
-	// switch (state)
+	// int array2D[3][3] =
 	// {
-	// case IDLE   : printf("대기 상태\n");
-	// 	break;
-	// case ATTACK : printf("공격 상태\n");
-	// 	break;
-	// case DIE    : printf("죽음 상태\n");
-	// 	break;
-	// default     : 
-	// 	break;
+	// 	{1,2,3},
+	// 	{4,5,6},
+	// 	{7,8,9},
+	// };
+	// 
+	// for (int i = 0; i < 3; i++)
+	// {
+	// 	for (int j = 0; j < 3; j++)
+	// 	{
+	// 		printf("%d ", array2D[i][j]);
+	// 	}
+	// 	printf("\n");
 	// }
+
+	// 2차원 배열은 행과 열로 구분되며 앞에 있는 배열은
+	// 열을 의미하고, 뒤에 있는 배열은 행을 의미합니다.
 
 #pragma endregion
 
-	SetConsoleTextASttribute(GetSTDHandle(STD_OUTPUT_HANDLE), 5);
-
-	printf("GYM");
+	Render();
 
 	return 0;
 }
